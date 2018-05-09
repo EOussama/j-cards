@@ -1,16 +1,19 @@
 /* #region Header */
-::selection {
-    background-color: var(--grayColorWeak);
-}
+
+::selection { background-color: var(--grayColorWeak); }
 
 header.landleg { padding: 120px 60px; }
 
-header.landleg h1.logo {
-    margin-bottom: 50px;
+header.landleg h1.lead { font-size: 70px; }
 
-    font-size: 80px;
+header.landleg h1.logo {
+    margin-top: 50px;
+
+    font-size: 40px;
     font-weight: bold;
 }
+
+header.landleg h1.logo a:hover { color: var(--grayColorDarken) !important; }
 
 /* #endregion */
 
@@ -21,11 +24,17 @@ div.search {
     min-width: 500px;
 }
 
+div.search div.piano button.btn {
+    width: 170px;
+}
+
 input#inputSearch { width: 100%; }
 
 /* #endregion */
 
 /* #region Card */
+
+div.fold-body#charactersContainer { perspective: 50000px; }
 
 div.card {
     position: relative;
