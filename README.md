@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="images/favicon.png" alt="J-Cards logo" width="80">
+    <h1 align="center" style="font-size: 50px">ひらがな</h1>
     <h1 align="center">J-Cards</h1>
 </p>
 
