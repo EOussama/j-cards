@@ -9,7 +9,6 @@ var Card = /** @class */ (function () {
             this._card.classList.add('flipped');
         else
             this._card.classList.remove('flipped');
-        console.log(this._card);
     };
     return Card;
 }());
@@ -21,6 +20,7 @@ var Deck = /** @class */ (function () {
         var _loop_1 = function (card) {
             var charCard = document.createElement('div'), charCardFront = document.createElement('div'), charCardBack = document.createElement('div');
             charCard.classList.add('card');
+            charCard.classList.add('text-dark');
             charCardFront.classList.add('face');
             charCardFront.classList.add('front');
             charCardFront.textContent = card._hiragana;
@@ -30,7 +30,7 @@ var Deck = /** @class */ (function () {
             charCardBack.classList.add('back');
             charCardBack.textContent = card._english;
             if (card._english.length > 1)
-                charCardBack.style.fontSize = '40px';
+                charCardBack.style.fontSize = '60px';
             charCard.appendChild(charCardFront);
             charCard.appendChild(charCardBack);
             charsContainer.appendChild(charCard);

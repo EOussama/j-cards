@@ -21,8 +21,6 @@ class Card implements ICard {
             this._card.classList.add('flipped');
         else
             this._card.classList.remove('flipped');
-
-        console.log(this._card);
     }
 }
 
@@ -41,6 +39,7 @@ class Deck {
                 charCardBack = document.createElement('div');
 
             charCard.classList.add('card');
+            charCard.classList.add('text-dark');
 
             charCardFront.classList.add('face');
             charCardFront.classList.add('front');            
@@ -52,7 +51,7 @@ class Deck {
             charCardBack.classList.add('back');
             charCardBack.textContent = card._english;
             if(card._english.length > 1)
-                charCardBack.style.fontSize = '40px';
+                charCardBack.style.fontSize = '60px';
             
             charCard.appendChild(charCardFront);
             charCard.appendChild(charCardBack);
